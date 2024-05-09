@@ -1,7 +1,8 @@
-// SPDX-License-Identifier: UNLICENSED 
+// SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.0;
 
-contract NftTrading {
+import "@openzeppelin/contracts/access/Ownable.sol";
 
-    
+contract NftTrading is Ownable {
+    constructor(address initialOwner) Ownable(initialOwner) {}
 }
